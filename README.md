@@ -58,7 +58,7 @@ start_date = '2015-01-01'
 end_date = '2017-12-31'
 pf = build_portfolio(names=names,
                     start_date=start_date,
-                    end_date=end_date)
+                    end_date=end_date, data_api="yfinance")
 ```
 `pf` is an instance of `finquant.portfolio.Portfolio`, which contains the prices of the stocks in your portfolio. Then...
 ```
